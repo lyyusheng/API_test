@@ -1,11 +1,11 @@
-import os
+import sys
+
+# sys.path.append('./')    # 返回上一级
 from api_test.test_case import test_register, test_login, test_add_loan, test_recharge, test_invest
 import unittest
 import HTMLTestRunnerNew
 from api_test.common import project_path
-import sys
 
-sys.path.append("./")    # 返回上一级
 # 新建测试集
 suite = unittest.TestSuite()
 # 加载用例
