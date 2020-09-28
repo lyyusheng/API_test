@@ -3,6 +3,9 @@ from api_test.test_case import test_register, test_login, test_add_loan, test_re
 import unittest
 import HTMLTestRunnerNew
 from api_test.common import project_path
+import sys
+sys.path.append("./")
+
 
 
 # 新建测试集
