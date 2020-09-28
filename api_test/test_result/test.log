@@ -1,0 +1,1508 @@
+2020-09-02 00:51:41,846-[CRITICAL]-my_log.py-api_log-日志信息:这特么的是error信息
+2020-09-02 00:51:41,846-[INFO]-my_log.py-api_log-日志信息:只是info信息
+2020-09-02 00:51:41,846-[CRITICAL]-my_log.py-api_log-日志信息:error信息
+2020-09-13 05:58:03,027-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-13 05:58:03,100-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-13 05:58:03,153-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-13 05:58:03,261-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-13 05:58:03,262-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-13 05:58:03,263-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-13 05:58:03,287-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-13 05:58:03,380-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-13 05:58:03,381-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-13 05:58:03,382-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-13 05:58:03,407-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-13 05:58:03,489-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-13 05:58:03,491-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-13 05:58:03,492-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-13 05:58:03,514-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-13 05:58:03,602-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-13 05:58:03,603-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-13 05:58:03,604-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-13 05:58:03,626-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-13 05:58:03,709-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-13 05:58:03,710-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-13 05:58:03,710-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-13 05:58:03,735-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-13 05:58:03,820-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-13 06:03:13,694-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-13 06:03:13,701-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-13 06:03:13,743-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-13 06:03:13,831-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-13 06:03:13,833-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-13 06:03:13,833-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-13 06:03:13,856-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-13 06:03:13,944-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-13 06:03:13,945-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-13 06:03:13,946-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-13 06:03:13,970-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-13 06:03:14,055-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-13 06:03:14,056-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-13 06:03:14,057-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-13 06:03:14,083-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-13 06:03:14,192-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-13 06:03:14,193-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-13 06:03:14,194-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-13 06:03:14,218-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-13 06:03:14,311-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-13 06:03:14,312-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-13 06:03:14,313-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-13 06:03:14,334-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-13 06:03:14,423-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 04:46:06,659-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-14 04:46:06,785-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-14 04:46:06,827-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 04:46:07,019-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 04:46:07,020-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-14 04:46:07,021-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-14 04:46:07,046-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}' != {'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 04:46:07,224-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 04:46:07,225-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-14 04:46:07,226-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-14 04:46:07,250-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":0,"code":"20103","data":null,"msg":"密码不能为空"}' != {'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 04:46:07,424-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 04:46:07,426-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-14 04:46:07,426-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-14 04:46:07,460-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}' != {'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 04:46:07,665-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 04:46:07,667-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-14 04:46:07,668-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-14 04:46:07,689-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}' != {'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 04:46:07,870-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 04:46:07,871-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-14 04:46:07,872-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-14 04:46:07,898-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 04:46:08,088-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:16:35,355-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:16:35,836-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1} != {"status" :1,
+"code":"10001",
+"data":None,
+"msg":"登录成功"}
+2020-09-14 07:16:35,858-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:16:35,921-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:16:35,953-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0} != {"status" :0,
+"code":"20103",
+"data":None,
+"msg":"密码不能为空"}
+2020-09-14 07:16:35,984-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:16:35,987-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:16:36,411-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0} != {"status" :0,
+"code":"20111",
+"data":None,
+"msg":"用户名或密码错误"}
+2020-09-14 07:16:36,451-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:16:36,457-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:16:36,821-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0} != {"status" :0,
+"code":"20111",
+"data":None,
+"msg":"用户名或密码错误"}
+2020-09-14 07:16:36,854-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:16:36,856-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:16:36,895-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0} != {"status" :0,
+"code":"20103",
+"data":None,
+"msg":"手机号不能为空"}
+2020-09-14 07:16:36,913-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:21:50,764-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:21:51,209-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1} != {"status" :1,"code":"10001","data":None,"msg":"登录成功"}
+2020-09-14 07:21:51,307-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-14 07:21:51,307-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:21:51,309-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:21:51,326-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0} != {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"}
+2020-09-14 07:21:51,412-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:21:51,413-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:21:51,414-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:21:51,909-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0} != {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"}
+2020-09-14 07:21:52,002-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:21:52,003-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:21:52,003-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:21:52,421-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0} != {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"}
+2020-09-14 07:21:52,546-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:21:52,547-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:21:52,547-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:21:52,575-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0} != {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"}
+2020-09-14 07:21:52,662-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:21:52,662-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:23:55,738-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:23:56,073-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :1,"code":"10001","data":None,"msg":"登录成功"} != {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1}
+2020-09-14 07:23:56,184-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-14 07:23:56,185-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:23:56,186-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:23:56,224-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-14 07:23:56,322-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:23:56,323-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:23:56,324-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:23:56,644-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:23:56,766-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:23:56,767-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:23:56,769-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:23:57,095-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:23:57,201-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:23:57,201-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:23:57,203-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:23:57,225-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-14 07:23:57,315-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:23:57,315-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:27:56,103-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-14 07:27:56,109-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-14 07:27:56,137-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-14 07:27:56,227-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:27:56,228-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-14 07:27:56,229-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-14 07:27:56,251-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-14 07:27:56,335-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:27:56,336-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-14 07:27:56,337-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-14 07:27:56,364-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-14 07:27:56,456-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:27:56,457-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-14 07:27:56,458-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-14 07:27:56,476-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-14 07:27:56,561-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:27:56,562-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-14 07:27:56,563-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-14 07:27:56,585-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"} != {'code': '20108', 'data': None, 'msg': '密码长度必须为6~18', 'status': 0}
+2020-09-14 07:27:56,671-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:27:56,672-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-14 07:27:56,673-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-14 07:27:56,696-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-14 07:27:56,780-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:30:21,191-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-14 07:30:21,197-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-14 07:30:21,228-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,320-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:30:21,321-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-14 07:30:21,322-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-14 07:30:21,339-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,425-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:30:21,426-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-14 07:30:21,426-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-14 07:30:21,444-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,533-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:30:21,534-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-14 07:30:21,534-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-14 07:30:21,558-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,648-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:30:21,649-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-14 07:30:21,650-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-14 07:30:21,677-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,759-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:30:21,761-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-14 07:30:21,762-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-14 07:30:21,781-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'json' is not defined
+2020-09-14 07:30:21,870-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:31:16,497-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-14 07:31:16,503-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-14 07:31:16,528-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-14 07:31:16,620-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:31:16,622-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-14 07:31:16,622-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-14 07:31:16,731-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:31:16,732-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-14 07:31:16,733-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-14 07:31:16,836-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:31:16,837-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-14 07:31:16,838-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-14 07:31:16,948-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:31:16,950-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-14 07:31:16,950-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-14 07:31:17,054-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-14 07:31:17,056-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-14 07:31:17,056-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-14 07:31:17,081-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-14 07:31:17,166-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-14 07:33:25,105-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:33:25,455-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-14 07:33:25,585-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-14 07:33:25,586-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:33:25,587-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:33:25,737-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-14 07:33:25,849-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:33:25,849-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:33:25,851-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:33:26,319-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-14 07:33:26,431-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:33:26,431-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:33:26,432-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:33:26,804-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-14 07:33:26,906-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:33:26,907-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:33:26,908-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:33:26,953-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-14 07:33:27,082-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:33:27,083-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:35:38,204-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:35:38,799-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :1,"code":"10001","data":None,"msg":"登录成功"} != {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1}
+2020-09-14 07:35:38,903-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-14 07:35:38,903-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:35:38,904-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:35:38,928-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-14 07:35:39,016-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:35:39,017-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:35:39,018-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:35:39,515-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:35:39,615-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:35:39,615-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:35:39,616-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:35:40,129-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:35:40,233-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:35:40,233-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:35:40,234-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:35:40,258-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-14 07:35:40,356-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:35:40,357-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:38:44,032-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:38:44,452-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'} != {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1}
+2020-09-14 07:38:44,547-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-14 07:38:44,548-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:38:44,549-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:38:44,572-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-14 07:38:44,660-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-14 07:38:44,660-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:38:44,661-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:38:45,048-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:38:45,151-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:38:45,151-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:38:45,152-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:38:45,490-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-14 07:38:45,591-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-14 07:38:45,591-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-14 07:38:45,592-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-14 07:38:45,621-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-14 07:38:45,707-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-14 07:38:45,708-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 01:58:45,221-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 01:58:45,616-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'} != {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1}
+2020-09-15 01:58:45,720-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 01:58:45,720-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 01:58:45,721-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 01:58:45,743-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"} != {'code': '20103', 'data': None, 'msg': '密码不能为空', 'status': 0}
+2020-09-15 01:58:45,823-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 01:58:45,823-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 01:58:45,824-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 01:58:46,155-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-15 01:58:46,249-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 01:58:46,249-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 01:58:46,250-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 01:58:46,597-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+2020-09-15 01:58:46,695-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 01:58:46,696-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 01:58:46,696-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 01:58:46,715-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"} != {'code': '20103', 'data': None, 'msg': '手机号不能为空', 'status': 0}
+2020-09-15 01:58:46,793-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 01:58:46,793-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:02:47,612-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:02:47,949-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 02:02:48,046-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 02:02:48,046-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:02:48,047-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:02:48,070-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:02:48,165-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:02:48,166-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:02:48,167-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:02:48,488-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:02:48,588-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:02:48,589-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:02:48,590-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:02:48,909-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:02:48,988-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:02:48,989-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:02:48,990-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:02:49,008-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:02:49,089-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:02:49,090-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:03:41,360-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:03:41,366-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:03:41,399-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:03:41,503-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:03:41,504-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:03:41,504-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:03:41,610-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:03:41,611-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:03:41,611-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:03:41,710-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:03:41,711-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:03:41,711-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:03:41,809-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:03:41,811-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:03:41,811-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:03:41,915-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:03:41,917-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:03:41,917-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:03:41,940-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:03:42,023-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:23:09,617-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:23:09,623-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:23:09,659-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-09-15 02:23:09,746-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:23:09,747-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:23:09,748-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:23:09,881-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:23:09,883-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:23:09,883-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:23:10,026-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:23:10,027-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:23:10,027-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:23:10,146-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:23:10,147-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:23:10,148-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:23:10,262-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:23:10,263-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:23:10,264-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:23:10,280-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-09-15 02:23:10,384-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:24:28,804-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:24:28,812-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:24:28,843-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-09-15 02:24:28,930-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:24:28,931-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:24:28,931-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:24:29,030-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:24:29,031-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:24:29,031-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:24:29,130-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:24:29,131-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:24:29,131-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:24:29,239-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:24:29,241-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:24:29,241-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:24:29,339-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:24:29,340-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:24:29,341-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:24:29,358-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {"status":1,"code":"10001","data":null,"msg":"注册成功"} != {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2020-09-15 02:24:29,445-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:26:27,698-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:26:27,704-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:26:27,732-[CRITICAL]-my_log.py-api_log-日志信息:断言未通过，原因是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:26:27,819-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:26:27,821-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:26:27,822-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:26:27,921-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:26:27,923-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:26:27,924-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:26:28,027-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:26:28,029-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:26:28,029-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:26:28,130-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:26:28,131-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:26:28,132-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:26:28,244-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:26:28,245-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:26:28,245-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:26:28,261-[CRITICAL]-my_log.py-api_log-日志信息:断言未通过，原因是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:26:28,343-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:27:17,688-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:27:17,693-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:27:17,722-[CRITICAL]-my_log.py-api_log-日志信息:测试未通过，原因是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:27:17,816-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:27:17,817-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:27:17,818-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:27:17,926-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:27:17,927-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:27:17,928-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:27:18,026-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:27:18,027-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:27:18,028-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:27:18,143-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:27:18,144-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:27:18,145-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:27:18,251-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:27:18,252-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:27:18,253-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:27:18,281-[CRITICAL]-my_log.py-api_log-日志信息:测试未通过，原因是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:27:18,361-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:30:16,722-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:30:17,059-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'} != {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2020-09-15 02:30:17,139-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 02:30:17,140-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:30:17,141-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:30:17,158-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"密码不能为空"} != {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2020-09-15 02:30:17,240-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:30:17,240-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:30:17,241-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:30:17,566-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-09-15 02:30:17,662-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:30:17,663-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:30:17,664-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:30:17,988-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20111","data":None,"msg":"用户名或密码错误"} != {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
+2020-09-15 02:30:18,106-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:30:18,107-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:30:18,108-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:30:18,126-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是: :: {"status" :0,"code":"20103","data":None,"msg":"手机号不能为空"} != {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2020-09-15 02:30:18,209-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:30:18,209-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:31:29,384-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:31:29,721-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 02:31:29,800-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 02:31:29,801-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:31:29,802-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:31:29,817-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:31:29,897-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:31:29,897-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:31:29,898-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:31:30,233-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:31:30,325-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:31:30,326-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:31:30,327-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:31:30,656-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:31:30,755-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:31:30,755-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:31:30,756-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:31:30,776-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:31:30,855-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:31:30,855-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:35:36,758-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:35:36,763-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:35:36,788-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:35:36,888-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:35:36,890-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:35:36,952-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:35:36,952-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:35:37,012-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:35:37,013-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:35:37,049-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:35:37,050-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:35:37,086-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:35:37,087-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:35:37,113-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:35:54,139-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 02:35:54,145-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 02:35:54,173-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:35:54,251-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:35:54,252-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 02:35:54,252-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 02:35:54,352-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:35:54,353-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 02:35:54,354-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 02:35:54,453-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:35:54,454-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 02:35:54,454-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 02:35:54,558-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:35:54,559-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 02:35:54,559-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 02:35:54,655-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 02:35:54,656-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 02:35:54,657-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 02:35:54,675-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 02:35:54,756-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 02:36:22,996-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:36:23,336-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 02:36:23,425-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 02:36:23,426-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:36:23,427-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:36:23,442-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:36:23,522-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 02:36:23,523-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:36:23,523-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:36:23,847-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:36:23,936-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:36:23,936-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:36:23,937-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:36:24,276-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:36:24,373-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 02:36:24,373-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 02:36:24,374-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 02:36:24,403-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 02:36:24,483-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 02:36:24,484-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:39:41,727-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 04:39:41,797-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 04:39:41,857-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 04:39:41,983-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 04:39:41,984-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 04:39:41,985-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 04:39:42,127-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 04:39:42,128-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 04:39:42,128-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 04:39:42,247-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 04:39:42,248-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 04:39:42,249-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 04:39:42,359-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 04:39:42,360-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 04:39:42,361-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 04:39:42,479-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 04:39:42,481-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 04:39:42,482-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 04:39:42,509-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 04:39:42,598-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 04:40:29,179-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 04:40:29,186-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 04:40:29,212-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 04:40:29,315-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 04:40:29,317-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 04:40:29,317-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 04:40:29,429-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 04:40:29,430-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 04:40:29,431-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 04:40:29,543-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 04:40:29,544-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 04:40:29,545-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 04:40:29,651-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 04:40:29,652-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 04:40:29,653-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 04:40:29,789-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 04:40:29,790-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 04:40:29,791-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 04:40:29,815-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 04:40:29,921-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 04:40:43,186-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:40:43,588-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 04:40:43,744-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 04:40:43,744-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:40:43,745-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:40:43,763-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:40:43,854-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 04:40:43,854-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:40:43,856-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:40:44,258-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:40:44,390-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 04:40:44,390-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:40:44,391-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:40:44,758-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:40:44,860-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 04:40:44,861-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:40:44,862-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:40:44,886-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是:Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:40:44,989-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 04:40:44,990-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:45:05,343-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:45:05,792-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 04:45:05,901-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 04:45:05,901-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:45:05,902-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:45:05,919-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:45:06,023-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 04:45:06,024-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:45:06,025-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:45:06,405-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:45:06,505-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 04:45:06,505-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:45:06,507-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:45:06,853-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:45:06,943-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 04:45:06,943-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 04:45:06,944-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 04:45:06,963-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 04:45:07,052-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 04:45:07,053-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:33:59,477-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:33:59,973-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2020-09-15 05:34:00,106-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 05:34:00,107-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:34:00,108-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:34:00,130-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 05:34:00,288-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 05:34:00,289-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:34:00,289-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:34:00,618-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 05:34:00,717-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 05:34:00,717-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:34:00,718-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:34:01,048-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 05:34:01,153-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 05:34:01,154-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:34:01,155-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:34:01,181-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 05:34:01,314-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 05:34:01,316-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:06,186-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:35:06,628-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 05:35:06,629-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:06,629-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:35:06,766-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 05:35:06,766-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:06,767-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:35:07,202-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 05:35:07,203-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:07,204-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:35:07,654-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 05:35:07,655-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:07,658-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 05:35:07,793-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 05:35:07,794-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 05:35:39,007-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 05:35:39,015-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 05:35:39,043-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,166-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 05:35:39,167-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 05:35:39,167-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 05:35:39,191-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,298-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 05:35:39,300-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 05:35:39,300-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 05:35:39,318-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,429-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 05:35:39,430-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 05:35:39,431-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 05:35:39,455-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,562-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 05:35:39,563-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 05:35:39,563-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 05:35:39,581-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,685-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 05:35:39,687-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 05:35:39,688-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 05:35:39,707-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：name 'null' is not defined
+2020-09-15 05:35:39,860-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 06:11:51,110-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 06:11:51,117-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 06:11:51,155-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:11:51,262-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 06:11:51,264-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 06:11:51,265-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 06:11:51,397-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 06:11:51,399-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 06:11:51,401-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 06:11:51,538-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 06:11:51,539-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 06:11:51,540-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 06:11:51,677-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 06:11:51,678-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 06:11:51,679-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 06:11:51,820-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 06:11:51,822-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 06:11:51,824-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 06:11:51,840-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:11:51,963-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+2020-09-15 06:12:29,628-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:12:29,969-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 40 (char 39)
+2020-09-15 06:12:30,100-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 06:12:30,101-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:12:30,102-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:12:30,124-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:12:30,251-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 06:12:30,252-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:12:30,257-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:12:30,588-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:12:30,708-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 06:12:30,709-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:12:30,710-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:12:31,038-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:12:31,157-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 06:12:31,158-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:12:31,159-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:12:31,177-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:12:31,300-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 06:12:31,301-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:24:46,422-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:24:46,784-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 40 (char 39)
+2020-09-15 06:24:46,890-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:24:46,945-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:24:46,963-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:24:47,090-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:24:47,092-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:24:47,437-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:24:47,541-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:24:47,545-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:24:47,879-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:24:48,012-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:24:48,015-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:24:48,033-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:24:48,153-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:39:49,181-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 06:39:49,188-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 06:39:49,221-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:39:49,308-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 06:39:49,310-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 06:39:49,353-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 06:39:49,354-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 06:39:49,393-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 06:39:49,394-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 06:39:49,435-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 06:39:49,436-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 06:39:49,477-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 06:39:49,478-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 06:39:49,503-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:47:45,023-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 06:47:45,035-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 06:47:45,080-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:47:45,264-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 06:47:45,265-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 06:47:45,460-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 06:47:45,462-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 06:47:45,467-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 06:47:45,665-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 06:47:45,667-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 06:47:45,669-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 06:47:45,861-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 06:47:45,866-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 06:47:45,868-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 06:47:46,062-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 06:47:46,066-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 06:47:46,069-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 06:47:46,095-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+2020-09-15 06:48:27,450-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:48:27,825-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 39 (char 38)
+2020-09-15 06:48:27,989-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:48:27,995-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:48:28,015-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:48:28,179-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:48:28,182-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:48:28,501-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:48:28,669-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:48:28,672-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:48:29,032-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:48:29,190-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:48:29,196-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:48:29,220-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：Expecting value: line 1 column 36 (char 35)
+2020-09-15 06:48:29,391-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:53:46,810-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:53:47,285-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 06:53:47,285-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:53:47,286-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:53:47,432-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 06:53:47,433-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:53:47,433-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:53:47,880-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 06:53:47,880-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:53:47,881-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:53:48,379-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 06:53:48,380-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 06:53:48,381-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 06:53:48,522-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 06:53:48,523-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 07:10:12,217-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 07:10:12,217-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 07:10:12,254-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2020-09-15 07:10:12,392-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 07:10:12,393-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 07:10:12,558-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 07:10:12,559-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 07:10:12,560-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 07:10:12,711-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 07:10:12,712-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 07:10:12,712-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 07:10:12,900-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 07:10:12,901-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 07:10:12,902-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 07:10:13,096-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 07:10:13,097-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 07:10:13,097-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'tel','pwd':'12345678','regname':''}
+2020-09-15 07:10:13,123-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是：{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20109', 'data': None, 'msg': '手机号码格式不正确', 'status': 0}
+?           ++  ^                         ^^^^^^^^^             ^
+
+2020-09-15 07:10:13,269-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 07:10:13,709-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 07:10:13,710-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 07:10:13,711-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 07:10:13,854-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 07:10:13,854-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 07:10:13,855-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 07:10:14,314-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 07:10:14,314-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 07:10:14,315-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 07:10:14,783-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 07:10:14,784-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 07:10:14,785-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 07:10:14,935-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 07:10:14,936-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 08:56:50,517-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:56:50,526-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:56:50,923-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:56:50,924-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:56:50,983-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:56:50,985-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:56:51,041-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:56:51,042-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:56:51,110-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:56:51,111-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:56:51,184-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:56:51,186-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':''}
+2020-09-15 08:56:51,507-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:03,485-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:57:03,492-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:57:03,814-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:03,923-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:57:03,924-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:57:04,054-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:57:04,055-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:57:04,055-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:57:04,181-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:57:04,184-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:57:04,184-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:57:04,311-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:04,312-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:57:04,313-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:57:04,446-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:04,448-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:57:04,450-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':''}
+2020-09-15 08:57:04,763-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:19,954-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:57:19,961-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:57:20,290-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:20,440-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:57:20,442-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:57:20,608-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:57:20,610-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:57:20,611-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:57:20,775-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:57:20,777-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:57:20,778-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:57:20,945-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:20,947-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:57:20,949-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:57:21,105-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:21,107-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:57:21,108-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':''}
+2020-09-15 08:57:21,427-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:26,264-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:57:26,274-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:57:26,616-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:57:26,760-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:57:26,761-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:57:26,932-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:57:26,934-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:57:26,935-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:57:27,097-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:57:27,100-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:57:27,101-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:57:27,256-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:27,258-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:57:27,259-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:57:27,425-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:57:27,427-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:57:27,427-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070794','pwd':'12345678','regname':''}
+2020-09-15 08:57:27,748-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:10,738-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:58:10,748-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:58:11,071-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:11,221-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:58:11,222-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:58:11,403-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:58:11,405-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:58:11,406-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:58:11,577-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:58:11,580-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:58:11,581-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:58:11,745-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:11,748-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:58:11,748-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:58:11,929-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:11,932-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:58:11,935-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':''}
+2020-09-15 08:58:12,274-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:26,854-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:58:26,864-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:58:27,194-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:27,337-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:58:27,339-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:58:27,513-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:58:27,515-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:58:27,517-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:58:27,680-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:58:27,681-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:58:27,683-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:58:27,846-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:27,848-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:58:27,849-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:58:28,015-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:28,016-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:58:28,017-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':''}
+2020-09-15 08:58:28,363-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:44,120-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:58:44,131-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:58:44,480-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:58:44,649-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:58:44,649-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:58:44,847-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:58:44,849-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:58:44,850-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:58:45,046-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:58:45,047-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:58:45,048-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:58:45,236-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:45,237-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:58:45,238-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:58:45,433-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:58:45,435-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:58:45,436-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070800','pwd':'12345678','regname':''}
+2020-09-15 08:58:45,757-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 08:59:13,984-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 08:59:13,991-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 08:59:14,451-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 08:59:14,453-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 08:59:14,453-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 08:59:14,598-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 08:59:14,599-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 08:59:14,600-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 08:59:14,733-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 08:59:14,734-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 08:59:14,735-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 08:59:14,867-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:59:14,868-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 08:59:14,869-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 08:59:15,003-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 08:59:15,005-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 08:59:15,006-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':''}
+2020-09-15 08:59:15,348-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:00:02,395-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 09:00:02,409-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 09:00:02,989-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:00:03,215-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 09:00:03,216-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 09:00:03,450-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 09:00:03,455-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 09:00:03,457-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 09:00:03,680-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 09:00:03,681-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 09:00:03,682-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 09:00:03,892-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:00:03,894-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 09:00:03,894-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 09:00:04,082-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:00:04,083-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 09:00:04,085-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':''}
+2020-09-15 09:00:04,438-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:09:31,670-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 09:09:31,676-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 09:09:32,038-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:09:32,065-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 09:09:32,066-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 09:09:32,105-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 09:09:32,105-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 09:09:32,151-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 09:09:32,151-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 09:09:32,201-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 09:09:32,202-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 09:09:32,249-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 09:09:32,250-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':''}
+2020-09-15 09:09:32,590-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:10:09,886-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 09:10:09,892-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 09:10:10,240-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:10:10,350-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 09:10:10,351-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 09:10:10,491-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 09:10:10,494-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 09:10:10,495-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 09:10:10,774-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 09:10:10,776-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 09:10:10,778-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 09:10:10,901-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:10:10,902-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 09:10:10,902-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 09:10:11,018-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:10:11,019-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 09:10:11,020-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':''}
+2020-09-15 09:10:11,357-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:10:16,594-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 09:10:16,604-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 09:10:16,938-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 09:10:17,078-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 09:10:17,080-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 09:10:17,237-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 09:10:17,239-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 09:10:17,239-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 09:10:17,397-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 09:10:17,399-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 09:10:17,399-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 09:10:17,563-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:10:17,565-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 09:10:17,565-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 09:10:17,723-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 09:10:17,725-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 09:10:17,727-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':''}
+2020-09-15 09:10:18,052-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 10:17:02,546-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 10:17:02,552-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070900','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 10:17:02,886-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是： :: {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1} != {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+2020-09-15 10:17:02,987-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 10:17:02,987-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 10:17:03,097-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 10:17:03,098-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 10:17:03,098-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 10:17:03,199-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 10:17:03,201-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 10:17:03,201-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 10:17:03,327-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:17:03,328-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 10:17:03,329-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 10:17:03,432-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:17:03,433-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 10:17:03,434-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070901','pwd':'12345678','regname':''}
+2020-09-15 10:17:03,872-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 10:17:52,462-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 10:17:52,467-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070902','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 10:17:52,890-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 10:17:52,891-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 10:17:52,891-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 10:17:52,996-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 10:17:52,998-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 10:17:52,999-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 10:17:53,103-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 10:17:53,105-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 10:17:53,106-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 10:17:53,213-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:17:53,213-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 10:17:53,215-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 10:17:53,320-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:17:53,321-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 10:17:53,321-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070903','pwd':'12345678','regname':''}
+2020-09-15 10:17:53,853-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 10:18:40,267-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-15 10:18:40,268-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070904','pwd':'12345678','regname':'胡漢三'}
+2020-09-15 10:18:40,677-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 10:18:40,678-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-15 10:18:40,679-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-15 10:18:40,775-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 10:18:40,775-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-15 10:18:40,775-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-15 10:18:40,869-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 10:18:40,869-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-15 10:18:40,870-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-15 10:18:40,970-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:18:40,970-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-15 10:18:40,971-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-15 10:18:41,068-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-15 10:18:41,069-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-15 10:18:41,069-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070905','pwd':'12345678','regname':''}
+2020-09-15 10:18:41,513-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-15 10:18:41,513-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 10:18:41,935-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-15 10:18:41,936-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 10:18:41,936-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 10:18:42,070-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-15 10:18:42,070-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 10:18:42,071-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 10:18:42,483-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 10:18:42,484-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 10:18:42,484-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 10:18:42,903-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-15 10:18:42,903-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-15 10:18:42,903-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-15 10:18:43,008-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-15 10:18:43,009-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 04:15:28,658-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是 :: {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1} != {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+2020-09-23 05:08:04,674-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是 :: {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1} != {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+2020-09-23 05:08:41,433-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是 :: {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1} != {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+2020-09-23 05:28:22,634-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是 :: {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1} != {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+2020-09-23 05:31:09,555-[CRITICAL]-my_log.py-api_log-日志信息:http请求出错了，错误是 :: {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1} != {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+2020-09-23 06:10:48,489-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 06:10:48,495-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 06:10:49,131-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 06:10:49,131-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 06:59:46,481-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 06:59:46,488-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 06:59:47,226-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 06:59:47,226-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:02:14,200-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:02:18,199-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:03:15,074-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:03:17,003-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:12:21,566-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:12:21,572-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:12:22,336-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 07:12:22,337-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:12:22,338-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:12:23,044-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-23 07:14:39,381-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:14:39,387-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:14:39,792-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:14:39,792-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:15:49,856-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:15:49,862-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:15:50,250-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:15:50,251-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:15:50,661-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-23 07:15:50,662-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loanid#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-23 07:16:03,751-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:16:03,757-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:16:04,228-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 07:16:04,229-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:16:04,230-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:16:04,638-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-23 07:16:04,639-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-23 07:16:04,640-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loanid#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-23 07:16:04,737-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-23 07:21:42,466-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:21:42,472-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:21:43,171-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 07:21:43,172-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:21:43,173-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:21:43,812-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-23 07:21:43,813-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-23 07:21:43,814-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-23 07:21:43,992-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-23 07:23:12,038-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-23 07:23:12,039-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070906','pwd':'12345678','regname':'胡漢三'}
+2020-09-23 07:23:12,083-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-23 07:23:12,084-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-23 07:23:12,085-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-23 07:23:12,086-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-23 07:23:12,088-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-23 07:23:12,088-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-23 07:23:12,090-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-23 07:23:12,091-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-23 07:23:12,092-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-23 07:23:12,093-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070907','pwd':'12345678','regname':''}
+2020-09-23 07:23:12,096-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 07:23:12,097-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 07:23:12,112-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 07:23:12,113-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 07:23:12,114-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 07:23:12,115-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 07:23:12,116-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 07:23:12,117-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 07:23:12,119-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 07:23:12,119-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 07:23:12,121-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 07:23:12,122-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 07:23:12,884-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 07:23:12,884-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 07:23:12,884-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 07:23:13,416-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-23 07:23:13,418-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-23 07:23:13,418-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-23 07:23:13,545-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-23 23:18:16,997-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-23 23:18:17,028-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070908','pwd':'12345678','regname':'胡漢三'}
+2020-09-23 23:18:17,559-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-23 23:18:17,559-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-23 23:18:17,559-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-23 23:18:17,684-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-23 23:18:17,684-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-23 23:18:17,684-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-23 23:18:17,809-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-23 23:18:17,809-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-23 23:18:17,809-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-23 23:18:17,919-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-23 23:18:17,919-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-23 23:18:17,919-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-23 23:18:18,044-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-23 23:18:18,044-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-23 23:18:18,044-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070909','pwd':'12345678','regname':''}
+2020-09-23 23:18:18,450-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-23 23:18:18,450-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 23:18:18,872-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 23:18:18,872-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 23:18:18,872-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 23:18:18,981-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-23 23:18:18,981-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 23:18:18,981-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 23:18:19,403-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-23 23:18:19,403-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 23:18:19,403-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 23:18:19,841-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-23 23:18:19,841-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 23:18:19,841-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-23 23:18:19,966-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-23 23:18:19,966-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-23 23:18:19,966-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-23 23:18:19,966-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-23 23:18:20,403-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-23 23:18:20,403-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-23 23:18:20,403-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-23 23:18:20,966-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-23 23:18:20,966-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-23 23:18:20,966-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-23 23:18:21,091-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-24 01:23:17,730-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 01:23:17,794-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 01:23:18,340-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 01:23:18,341-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 01:23:18,343-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 01:23:18,344-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 01:23:25,649-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 01:23:25,656-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 01:23:26,025-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 01:23:26,026-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 01:23:26,029-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 01:23:26,030-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 01:53:56,858-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 01:53:56,864-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 01:53:57,454-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 01:53:57,454-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 01:53:57,908-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 01:53:57,908-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 01:54:34,368-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 01:54:34,374-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 01:54:34,797-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 01:54:34,798-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 01:54:34,798-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 01:54:35,330-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 01:54:35,331-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}'}
+2020-09-24 01:54:53,137-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 01:54:53,143-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 01:54:53,564-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 01:54:53,564-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 01:54:53,565-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 01:54:54,196-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 01:54:54,197-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}'}
+2020-09-24 02:02:24,372-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:02:24,378-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:02:24,822-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:02:24,823-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 02:02:24,823-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 02:02:25,405-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 02:02:25,405-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}'}
+2020-09-24 02:05:35,956-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:05:35,964-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:05:36,383-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:05:36,384-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 02:05:36,384-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 02:05:37,172-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 02:05:37,172-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}'}
+2020-09-24 02:12:03,301-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-24 02:12:03,302-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070910','pwd':'12345678','regname':'胡漢三'}
+2020-09-24 02:12:03,732-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 02:12:03,733-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-24 02:12:03,733-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-24 02:12:03,828-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 02:12:03,828-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-24 02:12:03,829-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-24 02:12:03,916-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 02:12:03,917-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-24 02:12:03,917-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-24 02:12:04,009-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 02:12:04,009-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-24 02:12:04,010-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-24 02:12:04,121-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 02:12:04,122-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-24 02:12:04,122-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070911','pwd':'12345678','regname':''}
+2020-09-24 02:12:04,549-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 02:12:04,549-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:12:04,957-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:12:04,958-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:12:04,958-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:12:05,053-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 02:12:05,054-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:12:05,054-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:12:05,481-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 02:12:05,481-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:12:05,482-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:12:05,895-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 02:12:05,895-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:12:05,896-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:12:06,014-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 02:12:06,014-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:12:06,015-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:12:06,015-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:12:06,436-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:12:06,437-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-24 02:12:06,437-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-24 02:12:06,902-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-24 02:12:06,902-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-24 02:12:06,902-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-24 02:12:07,014-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-24 02:12:07,014-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:12:07,015-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:12:07,451-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:12:07,451-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 02:12:07,451-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"2162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 02:12:09,116-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 02:12:09,117-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}'}
+2020-09-24 02:12:09,224-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+2020-09-24 02:14:31,913-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-24 02:14:31,913-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070912','pwd':'12345678','regname':'胡漢三'}
+2020-09-24 02:14:32,332-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 02:14:32,332-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-24 02:14:32,333-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-24 02:14:32,443-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 02:14:32,444-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-24 02:14:32,444-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-24 02:14:32,576-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 02:14:32,577-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-24 02:14:32,578-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-24 02:14:32,683-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 02:14:32,684-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-24 02:14:32,684-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-24 02:14:32,797-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 02:14:32,798-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-24 02:14:32,798-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070913','pwd':'12345678','regname':''}
+2020-09-24 02:14:33,222-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 02:14:33,222-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:14:33,623-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:14:33,623-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:14:33,623-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:14:33,736-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 02:14:33,736-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:14:33,737-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:14:34,149-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 02:14:34,150-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:14:34,150-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:14:34,589-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 02:14:34,589-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:14:34,589-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 02:14:34,697-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 02:14:34,697-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 02:14:34,698-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:14:34,698-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:14:35,123-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:14:35,123-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-24 02:14:35,124-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-24 02:14:35,539-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-24 02:14:35,539-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-24 02:14:35,540-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-24 02:14:35,644-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-24 02:14:35,645-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 02:14:35,645-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 02:14:36,075-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 02:14:36,076-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 02:14:36,076-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"4562000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 02:14:37,867-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': {'id': 287195, 'regname': '小蜜蜂', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobilephone': '18300070752', 'leaveamount': '4862000.00', 'type': '1', 'regtime': '2020-01-15 16:19:51.0'}, 'msg': '充值成功'}
+2020-09-24 02:14:37,868-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 02:14:37,868-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 02:14:37,963-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+2020-09-24 04:28:49,471-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-24 04:28:49,471-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070914','pwd':'12345678','regname':'胡漢三'}
+2020-09-24 04:28:49,967-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 04:28:49,968-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-24 04:28:49,968-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-24 04:28:50,066-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 04:28:50,067-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-24 04:28:50,067-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-24 04:28:50,164-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 04:28:50,164-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-24 04:28:50,165-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-24 04:28:50,262-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 04:28:50,263-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-24 04:28:50,263-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-24 04:28:50,370-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 04:28:50,371-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-24 04:28:50,371-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070915','pwd':'12345678','regname':''}
+2020-09-24 04:28:50,772-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 04:28:50,773-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 04:28:51,199-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 04:28:51,199-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 04:28:51,200-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 04:28:51,299-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 04:28:51,300-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 04:28:51,300-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 04:28:51,739-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 04:28:51,739-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 04:28:51,740-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 04:28:52,179-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 04:28:52,179-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 04:28:52,180-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 04:28:52,267-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 04:28:52,268-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 04:28:52,268-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 04:28:52,268-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 04:28:52,713-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 04:28:52,713-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-24 04:28:52,714-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-24 04:28:53,176-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-24 04:28:53,176-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-24 04:28:53,177-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-24 04:28:53,311-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-24 04:28:53,311-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 04:28:53,312-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 04:28:53,751-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 04:28:53,752-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 04:28:53,752-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"4862000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 04:28:55,443-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': {'id': 287195, 'regname': '小蜜蜂', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobilephone': '18300070752', 'leaveamount': '5162000.00', 'type': '1', 'regtime': '2020-01-15 16:19:51.0'}, 'msg': '充值成功'}
+2020-09-24 04:28:55,443-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 04:28:55,444-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 04:28:55,561-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+2020-09-24 22:26:54,532-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-24 22:26:54,547-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070916','pwd':'12345678','regname':'胡漢三'}
+2020-09-24 22:26:56,186-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 22:26:56,187-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-24 22:26:56,191-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-24 22:26:56,380-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 22:26:56,381-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-24 22:26:56,381-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-24 22:26:56,522-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 22:26:56,523-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-24 22:26:56,524-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-24 22:26:56,686-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 22:26:56,687-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-24 22:26:56,689-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-24 22:26:56,839-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-24 22:26:56,840-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-24 22:26:56,840-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070917','pwd':'12345678','regname':''}
+2020-09-24 22:26:57,302-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-24 22:26:57,303-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 22:26:57,838-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 22:26:57,839-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 22:26:57,840-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 22:26:57,976-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-24 22:26:57,977-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 22:26:57,978-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 22:26:58,462-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 22:26:58,463-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 22:26:58,463-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 22:26:58,942-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-24 22:26:58,943-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 22:26:58,944-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-24 22:26:59,089-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-24 22:26:59,090-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-24 22:26:59,091-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 22:26:59,092-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 22:26:59,559-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 22:26:59,560-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-24 22:26:59,561-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-24 22:27:00,176-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-24 22:27:00,176-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-24 22:27:00,177-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-24 22:27:00,321-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-24 22:27:00,323-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-24 22:27:00,323-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-24 22:27:00,760-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-24 22:27:00,761-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-24 22:27:00,762-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"5162000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-24 22:27:02,457-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': {'id': 287195, 'regname': '小蜜蜂', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobilephone': '18300070752', 'leaveamount': '5462000.00', 'type': '1', 'regtime': '2020-01-15 16:19:51.0'}, 'msg': '充值成功'}
+2020-09-24 22:27:02,458-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-24 22:27:02,459-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-24 22:27:02,617-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+2020-09-27 17:25:18,565-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第1条测试用例：正常注册,
+2020-09-27 17:25:18,567-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070918','pwd':'12345678','regname':'胡漢三'}
+2020-09-27 17:25:19,261-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-27 17:25:19,261-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第2条测试用例：不输入手机号,
+2020-09-27 17:25:19,262-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'','pwd':'12345679'}
+2020-09-27 17:25:19,378-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-27 17:25:19,378-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第3条测试用例：不输入密码,
+2020-09-27 17:25:19,379-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':''}
+2020-09-27 17:25:19,500-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-27 17:25:19,501-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第4条测试用例：输入5位密码,
+2020-09-27 17:25:19,501-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'12345'}
+2020-09-27 17:25:19,618-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-27 17:25:19,619-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第5条测试用例：输入19位密码,
+2020-09-27 17:25:19,620-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070752','pwd':'1234568290123456789'}
+2020-09-27 17:25:19,774-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20108', 'data': None, 'msg': '密码长度必须为6~18'}
+2020-09-27 17:25:19,774-[INFO]-my_log.py-api_log-日志信息:-----正在测试register模块里面第6条测试用例：不输入用户名,
+2020-09-27 17:25:19,775-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'mobilephone':'18300070919','pwd':'12345678','regname':''}
+2020-09-27 17:25:20,227-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+2020-09-27 17:25:20,227-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-27 17:25:20,676-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-27 17:25:20,676-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-27 17:25:20,677-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-27 17:25:20,807-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+2020-09-27 17:25:20,807-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-27 17:25:20,808-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-27 17:25:21,261-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-27 17:25:21,262-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-27 17:25:21,262-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-27 17:25:21,709-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2020-09-27 17:25:21,709-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-27 17:25:21,710-[INFO]-my_log.py-api_log-日志信息:开始执行新一条测试用例
+2020-09-27 17:25:21,824-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+2020-09-27 17:25:21,824-[INFO]-my_log.py-api_log-日志信息:一条测试用例执行完毕
+2020-09-27 17:25:21,825-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-27 17:25:21,825-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"#normal_usr#","pwd":"#normal_pwd#"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-27 17:25:22,282-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-27 17:25:22,283-[INFO]-my_log.py-api_log-日志信息:-------正在测试add_loan模块里面第2条测试用例：加标
+2020-09-27 17:25:22,283-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'#normal_member_id#','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'sql': "{'sql':'select max(Id) from loan where MemberID=287324'}", 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"加标成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+2020-09-27 17:25:24,768-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'}
+2020-09-27 17:25:24,768-[INFO]-my_log.py-api_log-日志信息:-------正在测试audit模块里面第3条测试用例：审核到4状态
+2020-09-27 17:25:24,769-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': '{"id":"#loan_id#","status":"4"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+2020-09-27 17:25:24,950-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'}
+2020-09-27 17:25:24,951-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-09-27 17:25:24,951-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070752","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'ActualResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'}
+2020-09-27 17:25:25,404-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2020-09-27 17:25:25,405-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常充值
+2020-09-27 17:25:25,405-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":"300000"}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070752" \'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"exp_amount","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}', 'ActualResult': '{"status":1,"code":"10001","data":{"id":287195,"regname":"小蜜蜂","pwd":"25D55AD283AA400AF464C76D713C07AD","mobilephone":"18300070752","leaveamount":"5462000.00","type":"1","regtime":"2020-01-15 16:19:51.0"},"msg":"充值成功"}'}
+2020-09-27 17:25:27,202-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 1, 'code': '10001', 'data': {'id': 287195, 'regname': '小蜜蜂', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobilephone': '18300070752', 'leaveamount': '5762000.00', 'type': '1', 'regtime': '2020-01-15 16:19:51.0'}, 'msg': '充值成功'}
+2020-09-27 17:25:27,203-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-09-27 17:25:27,203-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Params': '{"mobilephone":"18300070752","amount":""}', 'sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}', 'ActualResult': '{"status":0,"code":"20115","data":null,"msg":"请输入金额"}'}
+2020-09-27 17:25:27,315-[INFO]-my_log.py-api_log-日志信息:实际结果是:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}

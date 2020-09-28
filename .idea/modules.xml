@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Auto_webtest/.idea/Auto_webtest.iml" filepath="$PROJECT_DIR$/../Auto_webtest/.idea/Auto_webtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python14/.idea/Python14.iml" filepath="$PROJECT_DIR$/../Python14/.idea/Python14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonFuxi/.idea/PythonFuxi.iml" filepath="$PROJECT_DIR$/../PythonFuxi/.idea/PythonFuxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../newfuxi/.idea/newfuxi.iml" filepath="$PROJECT_DIR$/../newfuxi/.idea/newfuxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/zijixie.iml" filepath="$PROJECT_DIR$/.idea/zijixie.iml" />
+    </modules>
+  </component>
+</project>
